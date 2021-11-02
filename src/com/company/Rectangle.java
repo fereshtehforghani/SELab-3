@@ -1,7 +1,7 @@
 package com.company;
 
 public class Rectangle {
-    private float w, h;
+    protected float w, h;
 
     public Rectangle(float w, float h){
         this.w = w;
