@@ -11,6 +11,12 @@ public class RectTestClass {
    @Test
    public void testRectangleArea() {
       assertEquals(h * w, rectangle.computeArea(), 0.0001);
+
+      Rectangle rectangle_1 = new Rectangle((float)2.1, (float)10.4);
+      assertEquals((float)2.1 * 10.4, rectangle_1.computeArea(), 0.0001);
+
+      Rectangle rectangle_2 = new Rectangle((float)100.89, (float)23.9);
+      assertEquals((float)100.89 * 23.9, rectangle_2.computeArea(), 0.0001);
    }
 
    @Test

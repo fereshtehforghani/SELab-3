@@ -9,7 +9,7 @@ public class Square extends Rectangle{
         this.setW(w);
     }
     public float getA() {
-        return this.getW();
+        return super.getW();
     }
 
     public float computeArea(){

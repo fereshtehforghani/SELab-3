@@ -11,6 +11,12 @@ public class SquareTest {
     @Test
     public void testSquareArea() {
         assertEquals(a * a, square.computeArea(), 0.0001);
+
+        Rectangle square_1 = new Square((float)2.1);
+        assertEquals((float)2.1 * 2.1, square_1.computeArea(), 0.0001);
+
+        Rectangle square_2 = new Square((float)100.89);
+        assertEquals((float)100.89 * 100.89, square_2.computeArea(), 0.0001);
     }
 
     @Test
